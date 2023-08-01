@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Etch-A-Sketch</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="game.js" defer></script>
+
+  </head>
+
+  <body>
+    <h1>Etch-A-Sketch</h1>
+    <form id="gameForm" name="formName">
+      <div class="input-container">
+        <label for="boardSize">Squares per side:</label>
+        <input type="number" class="sizeInput" name="boardSize" inputmode="numeric" min="2" max="100" value="16"
+          autocomplete="off" autofocus>
+      </div>
+      <div class="input-container">
+        <label for="gameStyle">Game style:</label>
+        <select name="gameStyle" class="styleInput" autocomplete="off" required>
+          <option value="default" selected>Default</option>
+          <option value="random">Random Colors</option>
+          <option value="darkening">Change Lightness</option>
+          <!-- <option value="outline">Outline</option> -->
+        </select>
+      </div>
+    </form>
+    <button form="gameForm" type="submit" class="startBtn">Start</button>
+
+    <div class="boardInfo">
+      <div class="info-container">
+        <p class="currentSize">16</p>
+        <p>Squares</p>
+      </div>
+      <div class="info-container">
+        <p class="currentStyle">Default</p>
+        <p>Style</p>
+      </div>
+      <button form="gameForm" type="reset" class="reset">Reset</button>
+    </div>
+    <div class="board"></div>
+  </body>
+
+</html>

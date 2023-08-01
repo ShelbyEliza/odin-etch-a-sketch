@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+html,
+body {
+	min-height: 100vh;
+	margin: 0 auto;
+
+	font-size: 16px;
+	font-family: "Space Mono", monospace;
+	box-sizing: border-box;
+}
+body {
+	background-color: #1d2839;
+	color: snow;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+h1 {
+	text-align: center;
+	margin: 1rem;
+	/* border: 1px solid hsl(45, 54%, 70%); */
+}
+
+button {
+	background-color: rgb(199, 165, 65);
+	font-family: "Space Mono", monospace;
+	color: #1d2839;
+	box-shadow: none;
+
+	padding: 0.4rem 1rem;
+	border-radius: 0.2rem;
+	border: 2px solid #1d2839;
+}
+button:hover {
+	background-color: hsl(45, 54%, 70%);
+	border-color: rgb(199, 165, 65);
+	cursor: pointer;
+}
+form {
+	display: flex;
+	gap: 4rem;
+	align-items: center;
+	background-color: hsl(45, 54%, 70%);
+	border-radius: 0.2rem;
+
+	padding: 1rem;
+	color: #1d2839;
+}
+.input-container {
+	display: flex;
+	flex-direction: column;
+}
+.sizeInput {
+	width: 4rem;
+}
+.styleInput {
+	width: max-content;
+}
+.boardInfo {
+	display: flex;
+	align-items: center;
+
+	gap: 2rem;
+	padding: 0rem 2rem;
+}
+.info-container {
+	display: flex;
+	gap: 0.6rem;
+}
+.boardInfo p {
+	margin: 0rem;
+	color: hsl(45, 54%, 70%);
+}
+.startBtn {
+	margin-top: 0.8rem;
+}
+.reset {
+	margin-right: auto;
+}
+
+.board {
+	border: 1px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 4rem;
+	width: 1000px;
+	height: 1000px;
+	background-color: rgb(184, 147, 99);
+}
+
+.active {
+	background-color: rgb(61, 139, 127);
+}
+.square {
+	display: flex;
+}
+.row {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+}
